@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enerteq</title>
+  <link rel="shortcut icon" href="images/enerteq-logo-128x128.png">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+  <link rel="stylesheet" href="assets/application.css">
+  <link rel="stylesheet" href="assets/hover_effect.css">
+  <link rel="stylesheet" href="assets/application.css">
+</head>
+
+<body>
+
+<div class='page-background'>
+</div>
+
+<div class='page'>
+  <%= erb :navbar %>
+  <%= yield %>
+
+  <div class='narrow-page-gap'></div>
+
+  <div class="row">
+    <div class="dark-banner clearfix">
+      <div class="dark-banner-text">
+        <p>Enerteq is an Australian company based in Sydney serving clients nationwide.</p>
+        <a class="highlight-text footer-link" href="/about">About</a>
+        <a class="highlight-text footer-link" href="/contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class='wide-page-gap'></div>
+
+</div>
+
+</body>
+
+</html>

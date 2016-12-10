@@ -1,0 +1,201 @@
+html {
+    background-image: url(/images/recycling-plant.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body { margin: 0px; font-family: 'Dosis'; font-size: 1.5em; font-weight: lighter; color: #000; background-color: transparent;}
+.page { max-width: 1080px; margin-left: auto; margin-right: auto; }
+.page .row { margin-left: 0px; margin-right: 0px; }
+
+nav.navbar.navbar-default { background-color: white; border-radius: 0px; border: none; margin: 10px 0px 0px 0px; font-weight: bold; }
+nav.navbar.navbar-default .navbar-nav > li > a { color: #666; }
+nav.navbar.navbar-default .navbar-toggle { border-color: transparent; }
+nav.navbar.navbar-default .navbar-toggle .icon-bar { background-color: #999; }
+nav.navbar.navbar-default .navbar-toggle:hover { background-color: #333; border-color: transparent;  }
+nav.navbar.navbar-default .navbar-toggle:focus { background-color: #333; border-color: transparent;  }
+nav.navbar.navbar-default .navbar-nav > li > a:hover { color: #000; }
+nav.navbar.navbar-default .navbar-brand { padding: 0px 5px 0px 20px; vertical-align: middle; line-height: 48px; font-size: 32px; font-weight: lighter; }
+nav.navbar.navbar-default .navbar-brand img { vertical-align: top; margin: 7px 0px; height: 36px; width: 36px;}
+nav.navbar.navbar-default .navbar-brand { color: #666; }
+nav.navbar.navbar-default .navbar-brand:hover { color: #000; }
+nav.navbar.navbar-default .navbar-brand > img { display: inline-block; }
+
+
+.dark-jumbo {
+  background-color: #000;
+}
+
+.dark-jumbo-text {
+  color: white;
+  font-size: 2em;
+  margin: 130px 40px;
+  text-transform: uppercase;
+}
+
+.dark-jumbo-text .highlight-text {
+  color: #3b9033;
+}
+
+.footer-link {
+  margin: 5px 20px;
+}
+
+
+.dark-jumbo-image img {
+  max-height: 500px;
+  max-width: 500px;
+  float: right;
+}
+
+
+.light-banner {
+  background-color: #fff;
+  font-size: 1.2em;
+}
+
+.light-banner-text {
+  color: #000;
+  margin: 50px;
+  vertical-align: middle;
+}
+
+/*.light-banner-text a {
+  color: #3b9033;
+}*/
+
+.light-section {
+  background-color: #3b903355;
+}
+
+.light-section-text {
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  font-size: 1.2em;
+  margin: 25px 50px;
+  text-align: left;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.left-align-text {
+  text-align: left;
+}
+
+.dark-banner {
+  background-color: #000;
+}
+
+.dark-banner-text {
+  color: #fff;
+  font-size: 1.2em;
+  margin: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.highlight-text {
+  color: #3b9033;
+}
+
+
+
+/*.portfolio-link,
+.portfolio-link-mouseover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.portfolio-link-mouseover {
+  z-index: 10;
+}*/
+
+.tight-padding { padding: 0px !important; }
+.narrow-page-gap { height: 10px; }
+.wide-page-gap { height: 50px; }
+.full-width { width: 100%; }
+.big-icon { font-size: 5em; color: #3b9033; margin: 60px 10px; text-align: center; }
+.app-list { margin: 10px; }
+.app-list .list-group-item:hover { cursor: pointer; background-color: #e0f0e0;}
+
+
+.hovereffect a { text-decoration: none; }
+.hovereffect .overlay { pointer-events: none; }
+.hovereffect a.info {
+  margin: 20%;
+  background-color: #000;
+  opacity: 0;
+  border: none;
+}
+
+.hovereffect:hover a.info {
+  opacity: 0.5;
+}
+
+
+@media (max-width: 991px) {
+
+  .dark-jumbo-text {
+    margin: 30px 10px;
+    font-size: 1.8em;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  .dark-jumbo-image img {
+    max-height: 400px;
+    max-width: 400px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  nav.navbar.navbar-default {
+    margin: 0px;
+  }
+
+  .dark-jumbo-text {
+    margin: 20px 10px;
+    font-size: 1.5em;
+  }
+
+  .light-banner-text, .light-section-text, .dark-banner-text {
+    margin: 25px;
+  }
+
+
+}
+
+@media (max-width: 481px) {
+
+  .dark-jumbo-text {
+    font-size: 1.4em;
+  }
+
+  .light-banner-text, .light-section-text, .dark-banner-text {
+    margin: 10px;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .hovereffect a.info {
+    display: none;
+  }
+
+
+}

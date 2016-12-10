@@ -1,0 +1,166 @@
+<div class="row">
+  <div class="dark-jumbo clearfix">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="dark-jumbo-text">
+          <p><span class="highlight-text">Enerteq MVX</span><br>metering, efficiency, reporting</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="dark-jumbo-image">
+          <img src="/images/jumbo-pic.png" class="img img-responsive full-width" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='narrow-page-gap'></div>
+
+<div class="row">
+  <div class="light-banner clearfix">
+    <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <div class="light-banner-text text-center">
+        <p class="bold-text">Enerteq MVX is a smart utility M&V platform that helps you better manage your power, water and gas consumption.</p>
+        <p>The platform is well-suited to industrial and commercial applications where diverse data sources and multiple sites need to be integrated into a common system.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class='narrow-page-gap'></div>
+
+<div class="row">
+  <div class="light-banner clearfix">
+    <div class="col-sm-9">
+      <div class="light-banner-text">
+        <h3>Nodes and Apps</h3>
+        <p>Nodes are are configured and managed remotely.</p>
+        <p>The functionality of an Enerteq MVX installation is determined by the applications that are installed on its network nodes.</p>
+        <p>Each nodes can run multiple applications. New applications can be added to nodes easily; the installation process is similar to adding an app to a smartphone.</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="light-banner-text big-icon">
+        <img src="/images/network-abstract-schema.png" class="img" />
+      </div>
+    </div>
+    <div class="col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
+      <div class="light-banner-text app-list">
+        <p>Available applications include:</p>
+        <ul class="list-group">
+          <% @apps.each do |app| %>
+            <%= erb :_app, locals: { app: app } %>
+          <% end %>
+        </ul>
+        <% @apps.each do |app| %>
+          <%= erb :_app_modal, locals: { app: app } %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="light-banner clearfix">
+    <div class="col-sm-12">
+      <div class="light-banner-text">
+        <p>An Enerteq MVX installation incorporates four components.</p>
+      </div>
+    </div>
+    <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+      <a class="info highlight-text" href="/nodes"><i class="glyphicon glyphicon-screenshot"></i> Nodes</a>
+    </div>
+    <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+      <a class="info highlight-text" href="/apps"><i class="glyphicon glyphicon-stats"></i> Apps</a>
+    </div>
+    <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+      <a class="info highlight-text" href="/integration"><i class="glyphicon glyphicon-scale"></i> Integration</a>
+    </div>
+    <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+      <a class="info highlight-text" href="/support"><i class="glyphicon glyphicon-cog"></i> Support</a>
+    </div>
+  </div>
+
+  <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3">
+    <a href="/nodes">
+      <div class="hovereffect">
+        <img src="/images/industrial-pc.png" class="img img-responsive full-width" alt="" />
+        <div class="overlay">
+           <h2>Nodes</h2>
+           <a class="info" href="/nodes"><i class="glyphicon glyphicon-adjust"></i></a>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3">
+    <a href="/apps">
+      <div class="hovereffect">
+        <img src="/images/enerteq-screenshot-sample.png" class="img img-responsive full-width" alt="" />
+        <div class="overlay">
+           <h2>Apps</h2>
+           <a class="info" href="/apps"><i class="glyphicon glyphicon-adjust"></i></a>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3">
+    <a href="/integration">
+      <div class="hovereffect">
+        <img src="/images/dent-24.png" class="img img-responsive full-width" alt="" />
+        <div class="overlay">
+           <h2>Integration</h2>
+           <a class="info" href="/integration"><i class="glyphicon glyphicon-adjust"></i></a>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="tight-padding col-xs-6 col-sm-6 col-md-3 col-lg-3">
+    <a href="/support">
+      <div class="hovereffect">
+        <img src="/images/multimeter.png" class="img img-responsive full-width" alt="" />
+        <div class="overlay">
+           <h2>Support</h2>
+           <a class="info" href="/support"><i class="glyphicon glyphicon-adjust"></i></a>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="light-banner clearfix">
+    <div class="col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
+      <div class="light-banner-text text-center">
+        <p>Enerteq MVX is flexible and extensible so that it can adapt and change as your needs do.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='narrow-page-gap'></div>
+
+<div class="row">
+  <div class="light-banner clearfix">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="light-banner-text text-center">
+        <p><i>The cost-effective, industrial-grade M&V solution for owners, managers and engineers.</i></p>
+        <p>
+          <a class="bold-text highlight-text" href="/contact">Contact us for a quote.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
