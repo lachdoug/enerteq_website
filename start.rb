@@ -49,7 +49,7 @@ end
 
 def apps_json
   begin
-    url = "#{engines_library_uri}/api/v0/apps.json"
+    url = "#{engines_library_uri}"
     RestClient.get url
   rescue
     # Try again with invalid ssl
@@ -59,7 +59,7 @@ def apps_json
 end
 
 def engines_library_uri
-  ENV['ENERTEQ_LIBRARY_API_URI'] || "http://enerteqapps.engines.org"
+  ENV['ENERTEQ_LIBRARY_API_URI'] || "http://enerteqapps.engines.org/api/v0/apps"
 end
 
 def library_apps
