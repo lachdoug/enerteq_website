@@ -17,19 +17,24 @@ end
 # Enerteq MVX pages
 
 get '/integration' do
-  MeteringAndDataCaptureHtml ||= html_for :integration
+  IntegrationHtml ||= html_for :integration
 end
 
 get '/nodes' do
-  SiteControlAndGatewayHtml ||= html_for :nodes
+  NodesHtml ||= html_for :nodes
 end
 
 get '/apps' do
-  AnalysisAndReportingHtml ||= html_for :apps
+  AppsHtml ||= html_for_apps
+end
+
+def html_for_apps
+  @apps = library_apps
+  html_for :apps
 end
 
 get '/support' do
-  ServiceAndSupportHtml ||= html_for :support
+  SupportHtml ||= html_for :support
 end
 
 # Company pages
