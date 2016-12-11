@@ -18,9 +18,9 @@
         <li class="dropdown <%= @active == 'integration' ? 'active': '' %>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Platform<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li class="<%= @active == 'metering' ? 'active': '' %>"><a href="/integration">Integration</a></li>
-            <li class="<%= @active == 'about' ? 'active': '' %>"><a href="/site_control_and_gateway">Nodes</a></li>
+            <li class="<%= @active == 'about' ? 'active': '' %>"><a href="/nodes">Nodes</a></li>
             <li class="<%= @active == 'about' ? 'active': '' %>"><a href="/apps">Apps</a></li>
+            <li class="<%= @active == 'metering' ? 'active': '' %>"><a href="/integration">Integration</a></li>
             <li class="<%= @active == 'about' ? 'active': '' %>"><a href="/support">Support</a></li>
           </ul>
         </li>
